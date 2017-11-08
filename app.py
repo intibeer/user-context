@@ -13,8 +13,8 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import codecs
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+#import ssl
+#ssl._create_default_https_context = ssl._create_unverified_context
 
 app = Flask(__name__, static_url_path='')
 api = Api(app)
