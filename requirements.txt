@@ -7,5 +7,4 @@ flask-jsonpify
 flask-sqlalchemy
 requests
 beautifulsoup4
-urllib
 ssl
