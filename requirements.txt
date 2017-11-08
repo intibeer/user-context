@@ -1,0 +1,9 @@
+gunicorn
+psycopg2
+whitenoise
+flask 
+flask_restful
+flask-jsonpify
+flask-sqlalchemy
+requests
+beautifulsoup4
