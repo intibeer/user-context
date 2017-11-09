@@ -62,7 +62,8 @@
   <script>
 function process()
 {
-var url="https://user-context.herokuapp.com/api/v1.0/" + document.getElementById("url").value;
+baseurl = window.location.href 
+var url= baseurl + "/api/v1.0/" + document.getElementById("url").value;
 location.href=url;
 return false;
 }
@@ -94,16 +95,16 @@ Query: <input type="text" name="url" id="url"> <input type="submit" value="searc
 <div class="container">
   <p class="lead">Examples:</p>
   <div class="query-parse">
-  <a href="http://127.0.0.1:5000/api/v1.0/how+to+file+complaint"> How to file a complaint</a>
+  <a href="https://user-context.herokuapp.com/api/v1.0/how+to+file+complaint"> How to file a complaint</a>
   </div>
   <div class="query-parse">
-  <a href="http://127.0.0.1:5000/api/v1.0/how+to+checkin"> How to check in</a>
+  <a href="https://user-context.herokuapp.com/api/v1.0/how+to+checkin" onclick="href()"> How to check in</a>
   </div>
   <div class="query-parse">
-  <a href="http://127.0.0.1:5000/api/v1.0/how+to+reserve+a+seat"> Reserve a seat</a>
+  <a href="https://user-context.herokuapp.com/api/v1.0/how+to+reserve+a+seat"> Reserve a seat</a>
   </div>
   <div class="query-parse">
-  <a href="http://127.0.0.1:5000/api/v1.0/get+an+upgrade">Get an upgrade</a>
+  <a href="https://user-context.herokuapp.com/api/v1.0/get+an+upgrade">Get an upgrade</a>
   </div>
 </div>
 </div>
